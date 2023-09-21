@@ -13,6 +13,6 @@
 <h1>Hello world!</h1>
 <p>This sure looks like a GitHub Markdown document</p>
 <blockquote>
-	<p>...right?</p>
+  <p>...right?</p>
 </blockquote>
 ```
