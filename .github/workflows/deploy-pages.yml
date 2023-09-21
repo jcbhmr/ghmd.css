@@ -29,7 +29,7 @@ jobs:
       - run: npm ci
       - uses: actions/configure-pages@v3
       - run: npm run build
-      - run: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v2
         with:
           path: .
       - id: deploy-pages
