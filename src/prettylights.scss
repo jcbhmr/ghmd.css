@@ -81,7 +81,8 @@
     .light-theme,
     [data-theme="light"],
     :has(body.light),
-    :has(body.light-theme)
+    :has(body.light-theme),
+    :has(body[data-theme="light"])
   ) {
   @include prettylights-light;
 }
@@ -91,19 +92,21 @@
     .dark-theme,
     [data-theme="dark"],
     :has(body.dark),
-    :has(body.dark-theme)
+    :has(body.dark-theme),
+    :has(body[data-theme="dark"])
   ) {
   @include prettylights-dark;
 }
 
 @media (prefers-color-scheme: light) {
-  root:not(
+  :root:not(
       :is(
           .dark,
           .dark-theme,
           [data-theme="dark"],
           :has(body.dark),
-          :has(body.dark-theme)
+          :has(body.dark-theme),
+          :has(body[data-theme="dark"])
         )
     ) {
     @include prettylights-light;
@@ -111,13 +114,14 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  root:not(
+  :root:not(
       :is(
           .light,
           .light-theme,
           [data-theme="light"],
           :has(body.light),
-          :has(body.light-theme)
+          :has(body.light-theme),
+          :has(body[data-theme="light"])
         )
     ) {
     @include prettylights-dark;

@@ -6,13 +6,16 @@
   <img src="">
 </p>
 
-## Usage
+## Installation
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/ghmd.css" />
-<h1>Hello world!</h1>
-<p>This sure looks like a GitHub Markdown document</p>
-<blockquote>
-  <p>...right?</p>
-</blockquote>
+<link rel="stylesheet" href="https://unpkg.com/ghmd.css@1" />
+```
+
+## Usage
+
+```js
+import { marked } from "https://esm.run/marked@9";
+const html = marked("# Hello, world!");
+document.body.innerHTML = html;
 ```
