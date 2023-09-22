@@ -1,6 +1,6 @@
 {
   "name": "ghmd.css",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "🎨 Make your webpage look like a GitHub Markdown document",
   "type": "module",
   "unpkg": "dist/index.css",
@@ -8,15 +8,27 @@
   "scripts": {
     "build": "sass src/index.scss dist/index.css",
     "dev": "sass -w src/index.scss dist/index.css",
-    "test": "serve",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "test": "storybook dev",
+    "build:docs": "storybook build"
   },
   "files": [
     "dist"
   ],
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.4",
+    "@storybook/addon-interactions": "^7.4.4",
+    "@storybook/addon-links": "^7.4.4",
+    "@storybook/blocks": "^7.4.4",
+    "@storybook/html": "^7.4.4",
+    "@storybook/html-vite": "^7.4.4",
+    "@storybook/testing-library": "^0.2.1",
+    "marked": "^9.0.3",
     "prettier": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1.68.0",
-    "serve": "^14.2.1"
+    "serve": "^14.2.1",
+    "storybook": "^7.4.4"
   }
 }

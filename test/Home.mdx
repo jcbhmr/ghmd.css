@@ -2,8 +2,8 @@
 
 🎨 Make your webpage look like a GitHub Markdown document
 
-<p align=center>
-  <img src="https://i.imgur.com/F9TGI7F.png">
+<p align="center">
+  <img src="https://i.imgur.com/F9TGI7F.png" />
 </p>
 
 ## Installation
@@ -31,10 +31,8 @@ npm install ghmd.css
 Just write normal HTML! `<h1>`, `<p>`, `<ul>`, etc. all get styled to match the
 GitHub Markdown style.
 
-<table align=center><td>
-
 ```html
-<link ... />
+<link rel="stylesheet" href="https://unpkg.com/ghmd.css@1" />
 <h1>Hello world!</h1>
 <p>This is a list of things:</p>
 <ul>
@@ -43,12 +41,6 @@ GitHub Markdown style.
   <li>Three</li>
 </ul>
 ```
-
-<td>
-
-![](https://i.imgur.com/iNrqPQX.png)
-
-</table>
 
 If you're feeling adventurous, you can use a Markdown ➡ HTML converter like
 [marked] to dynamically show Markdown content on your page in the GitHub
@@ -69,6 +61,7 @@ For more advanced usage, you can scope the globally applied CSS using the
 [shadow DOM] with a [shadow root].
 
 ```html
+<link rel="stylesheet" href="https://unpkg.com/ghmd.css@1" />
 <div id="markdown">
   <h1>Hello world!</h1>
   <p>This is a list of things:</p>
@@ -92,7 +85,6 @@ For more advanced usage, you can scope the globally applied CSS using the
 If you're using [React], [react-shadow-root] is good abstraction over the manual
 JavaScript shown above. For [Vue], you can use the [vue-shadow-dom].
 
-<!-- prettier-ignore-start -->
 [marked]: https://marked.js.org/
 [classless CSS themes]: https://github.com/topics/classless
 [MVP.css]: https://andybrewer.github.io/mvp/
@@ -106,4 +98,3 @@ JavaScript shown above. For [Vue], you can use the [vue-shadow-dom].
 [Vue]: https://vuejs.org/
 [react-shadow-root]: https://apearce.github.io/react-shadow-root/
 [vue-shadow-dom]: https://npmjs.com/package/vue-shadow-dom
-<!-- prettier-ignore-end -->
